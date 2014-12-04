@@ -7,53 +7,53 @@
       xmlns:p="http://primefaces.org/ui"
       > 
 
-<h:head></h:head> 
+<h:head>
+
+	<style type="text/css">
+body {
+	font-family: geneva, arial, helvetica, sans-serif;
+	font-size: 70%;
+}
+</style>
+</h:head> 
 <body bgcolor="#ffffff"> 
 <p:panel header="GOFaP - Gestão das Operações de Fábrica de Programação" >
 <h:form>  
     <p:growl id="messages"/>
  
     <p:menubar>
-        <p:submenu label="File" icon="ui-icon-document">
-            <p:submenu label="New" icon="ui-icon-contact">
-                <p:menuitem value="Project" url="#" />
-                <p:menuitem value="Other" url="#" />
-            </p:submenu>
-            <p:menuitem value="Open" url="#" />
-            <p:separator />
-            <p:menuitem value="Quit" url="#" />
+        <p:submenu label="Parametrização" >
+            <p:menuitem value="Fornecedor" url="#" />
+            <p:menuitem value="Linguagem de Programação" url="#" />
+            <p:menuitem value="Vertical" url="#" />
+            <p:menuitem value="Coordenações" url="#" />
+            <p:menuitem value="Representantes" url="#" />
+            <p:menuitem value="Custo Hora" url="#" />
+            <p:menuitem value="Tipo Registro" url="#" />
+            <p:menuitem value="Justificativa" url="#" />
+            <p:menuitem value="Indicação" url="#" />
         </p:submenu>
- 
-        <p:submenu label="Edit" icon="ui-icon-pencil">
-            <p:menuitem value="Undo" url="#" icon="ui-icon-arrowreturnthick-1-w" />
-            <p:menuitem value="Redo" url="#" icon="ui-icon-arrowreturnthick-1-e" />
+        <p:submenu label="Solicitações" >
+            <p:menuitem value="Criar Solicitação" url="#" />
+            <p:menuitem value="Consultar Solicitações" url="#" />
+            <p:menuitem value="Encaminhar Solicitações" url="#" />
         </p:submenu>
- 
-        <p:submenu label="Help" icon="ui-icon-help">
-            <p:menuitem value="Contents" url="#" />
-            <p:submenu label="Search" icon="ui-icon-search">
-                <p:submenu label="Text">
-                    <p:menuitem value="Workspace" url="#" />
-                </p:submenu>
-                <p:menuitem value="File" url="#" />
-            </p:submenu>
+        <p:submenu label="Faturamento" >
+            <p:menuitem value="Criar Solicitação" url="#" />
+            <p:menuitem value="Consultar Solicitações" url="#" />
         </p:submenu>
- 
-        <p:submenu label="Actions" icon="ui-icon-gear">
-            <p:submenu label="Ajax" icon="ui-icon-refresh">
-                <p:menuitem value="Save" actionListener="#{menuView.save}" icon="ui-icon-disk" update="messages"/>
-                <p:menuitem value="Update" actionListener="#{menuView.update}" icon="ui-icon-arrowrefresh-1-w" update="messages"/>
-            </p:submenu>
-            <p:submenu label="Non-Ajax" icon="ui-icon-newwin">
-                <p:menuitem value="Delete" actionListener="#{menuView.delete}" icon="ui-icon-close" update="messages" ajax="false"/>
-            </p:submenu>
+        <p:submenu label="Relatórios" >
+            <p:menuitem value="Solicitações Pendentes" url="#" />
+            <p:menuitem value="Ranking por período" url="#" />
         </p:submenu>
- 
-        <p:menuitem value="Quit" url="http://www.primefaces.org" icon="ui-icon-close" />
- 
+      
+        <p:submenu label="Administração" >
+            <p:menuitem value="Usuários e Perfis" url="#" />
+        </p:submenu>
+        <p:menuitem value="Sair" url="#" icon="ui-icon-close" />
         <f:facet name="options">
             <p:inputText style="margin-right:10px" placeholder="Search"/>
-            <p:commandButton type="button" value="Logout" icon="ui-icon-extlink" />
+            <p:commandButton type="button" value="OK"  />
         </f:facet>
     </p:menubar>
 </h:form>
