@@ -17,15 +17,13 @@ body {
 </style>
 </h:head> 
 <body bgcolor="#ffffff"> 
-<p:panel header="GOFaP - Gestão das Operações de Fábrica de Programação" >
-<h:form>  
+<h:form id="mainmenu" >  
     <p:growl id="messages"/>
- 
     <p:menubar>
         <p:submenu label="Parametrização" >
-            <p:menuitem value="Fornecedor" url="#" />
+            <p:menuitem value="Fornecedor" action="#{router.fornecedor}"  />
             <p:menuitem value="Linguagem de Programação" url="#" />
-            <p:menuitem value="Vertical" url="#" />
+            <p:menuitem value="Vertical" action="parametrizacao/vertical"/>
             <p:menuitem value="Coordenações" url="#" />
             <p:menuitem value="Representantes" url="#" />
             <p:menuitem value="Custo Hora" url="#" />
@@ -57,7 +55,6 @@ body {
         </f:facet>
     </p:menubar>
 </h:form>
-</p:panel>
 <h:form>
 </h:form>
 </body> 
