@@ -25,7 +25,7 @@ public class Router {
 	
 	
 	public String vertical(){
-		return "/parametrizacao/vertical";
+		return "vertical";
 	}
 	
 	

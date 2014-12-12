@@ -8,13 +8,15 @@
 
 <ui:composition template="/templates/principal.xhtml">
 	<ui:define name="content">
-		<p:panel header="Cadastro de Vertical" style="width: 70%;">
+		<p:panel header="Cadastro de Linguagem de Programação" style="width: 70%;">
 			<h:form>
 				<h:panelGrid columns="1">
 					<h:outputLabel value="Codigo:" />
 					<h:inputText value="" size="10" />
 					<h:outputLabel value="Nome" />
 					<h:inputText value="" size="45" />
+					<h:outputLabel value="Peso" />
+					<h:inputText value="" size="10" />
 				</h:panelGrid><br />
 				<p:commandButton value="Salvar" style="width: 150px;" />
 				<p:commandButton value="Cancelar" style="width: 150px;" />

@@ -10,11 +10,32 @@
     TARGET="rules:#sistema#parametrizacao#vertical.xhtml"
     TITLE="vertical" model-entity="JSFProcessItemOutput"/>
   </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:#template#principal.xhtml:1" NAME="item1"
+   PATH="/template/principal.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="linguagemprogramacao::#sistema#parametrizacao#linguagemprogramacao.xhtml"
+    NAME="output"
+    PATH="/sistema/parametrizacao/linguagemprogramacao.xhtml"
+    TARGET="rules:#sistema#parametrizacao#linguagemprogramacao.xhtml"
+    TITLE="linguagemprogramacao" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:#template#principal.xhtml:2" NAME="item2"
+   PATH="/template/principal.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="coordenacao::#sistema#parametrizacao#coordenacoes.xhtml"
+    NAME="output" PATH="/sistema/parametrizacao/coordenacoes.xhtml"
+    TARGET="rules:#sistema#parametrizacao#coordenacoes.xhtml"
+    TITLE="coordenacao" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
  </PROCESS-ITEM>
- <PROCESS-ITEM NAME="rules:#templates#principalCrud.xhtml"
-  PATH="/templates/principalCrud.xhtml" SHAPE="32,129,0,0" model-entity="JSFProcessGroup">
-  <PROCESS-ITEM ID="rules:#templates#principalCrud.xhtml:0" NAME="item"
-   PATH="/templates/principalCrud.xhtml" model-entity="JSFProcessItem">
+ <PROCESS-ITEM NAME="rules:#sistema#parametrizacao#vertical.xhtml"
+  PATH="/sistema/parametrizacao/vertical.xhtml" SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#sistema#parametrizacao#fornecedor.xhtml"
+  PATH="/sistema/parametrizacao/fornecedor.xhtml" SHAPE="240,145,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#templates#principal.xhtml"
+  PATH="/templates/principal.xhtml" SHAPE="32,129,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#templates#principal.xhtml:0" NAME="item"
+   PATH="/templates/principal.xhtml" model-entity="JSFProcessItem">
    <PROCESS-ITEM-OUTPUT
     ID="fornecedor::#sistema#parametrizacao#fornecedor.xhtml"
     NAME="output" PATH="/sistema/parametrizacao/fornecedor.xhtml"
@@ -22,8 +43,10 @@
     TITLE="fornecedor" model-entity="JSFProcessItemOutput"/>
   </PROCESS-ITEM>
  </PROCESS-ITEM>
- <PROCESS-ITEM NAME="rules:#sistema#parametrizacao#vertical.xhtml"
-  PATH="/sistema/parametrizacao/vertical.xhtml" SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
- <PROCESS-ITEM NAME="rules:#sistema#parametrizacao#fornecedor.xhtml"
-  PATH="/sistema/parametrizacao/fornecedor.xhtml" SHAPE="240,145,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#sistema#parametrizacao#coordenacoes.xhtml"
+  PATH="/sistema/parametrizacao/coordenacoes.xhtml" SHAPE="272,433,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM
+  NAME="rules:#sistema#parametrizacao#linguagemprogramacao.xhtml"
+  PATH="/sistema/parametrizacao/linguagemprogramacao.xhtml"
+  SHAPE="272,321,0,0" model-entity="JSFProcessGroup"/>
 </PROCESS>
