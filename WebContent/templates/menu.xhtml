@@ -4,8 +4,7 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:mj="http://mojarra.dev.java.net/mojarra_ext"
-      xmlns:p="http://primefaces.org/ui"
-      > 
+      xmlns:p="http://primefaces.org/ui"> 
 
 <h:head>
 
@@ -16,14 +15,16 @@ body {
 }
 </style>
 </h:head> 
-<body bgcolor="#ffffff"> 
-<h:form id="mainmenu" >  
-    <p:growl id="messages"/>
+<body bgcolor="#ffffff" > 
+
+<ui:composition>
+
+<h:form id="mainmenu"  >  
     <p:menubar>
         <p:submenu label="Parametrização" >
-            <p:menuitem value="Fornecedor" action="#{router.fornecedor}"  />
-            <p:menuitem value="Linguagem de Programação" url="#" />
-            <p:menuitem value="Vertical" action="parametrizacao/vertical"/>
+            <p:menuitem value="Fornecedor"  action="fornecedor" />
+            <p:menuitem value="Linguagem de Programação"  />
+            <p:menuitem value="Vertical" action="vertical"  />
             <p:menuitem value="Coordenações" url="#" />
             <p:menuitem value="Representantes" url="#" />
             <p:menuitem value="Custo Hora" url="#" />
@@ -44,7 +45,6 @@ body {
             <p:menuitem value="Solicitações Pendentes" url="#" />
             <p:menuitem value="Ranking por período" url="#" />
         </p:submenu>
-      
         <p:submenu label="Administração" >
             <p:menuitem value="Usuários e Perfis" url="#" />
         </p:submenu>
@@ -55,7 +55,6 @@ body {
         </f:facet>
     </p:menubar>
 </h:form>
-<h:form>
-</h:form>
+</ui:composition>
 </body> 
 </html>

@@ -1,29 +1,32 @@
 package br.com.gofap.managedbean;
 
-import javax.annotation.ManagedBean;
+import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
+import javax.faces.context.FacesContext;
+import javax.servlet.http.HttpServletRequest;
 
 
 
-@ManagedBean(value="router")
+
+@ManagedBean(name="router")
 @RequestScoped
 public class Router {
 
-	
-	
-	
+			
+		
 	public Router() {
 
 	}
 	
 	
 	public String fornecedor(){
-		
-		return "parametrizacao/fornecedor";
+		return "fornecedor";
 	}
 	
 	
-	
+	public String vertical(){
+		return "/parametrizacao/vertical";
+	}
 	
 	
 }

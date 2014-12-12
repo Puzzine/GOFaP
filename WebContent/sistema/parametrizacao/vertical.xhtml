@@ -5,13 +5,16 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:p="http://primefaces.org/ui">
 
-	<ui:composition template="/sistema/principal.xhtml">
-	
 
+<ui:composition template="/templates/principalCrud.xhtml">
 	<ui:define name="content">
-	<p:panel header="Cadastro de Vertical">
-	
-	
+	<p:panel header="Cadastro de Vertical" style="width: 40%;">
+			<h:panelGrid columns="1">
+				<h:outputLabel value="Codigo:"  />
+				<h:inputText value="" size="10"/>
+				<h:outputLabel value="Nome" />
+				<h:inputText value=""  size="45"/>
+			</h:panelGrid>
 	</p:panel>
 
 	</ui:define>
