@@ -4,8 +4,7 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui"
-	xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
-	>
+	xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
 <c:set var="ctx" value="#{request.contextPath}" scope="request" />
 
 <h:head>
@@ -21,48 +20,48 @@ body {
 
 	<div id="header">
 		<ui:insert name="header">
-		<ui:include src="header.xhtml" />
+			<ui:include src="header.xhtml" />
 		</ui:insert>
 	</div>
-<p:panel header="GOFaP - Gestão das Operações de Fábrica de Programação" >
+	<p:panel
+		header="GOFaP - Gestão das Operações de Fábrica de Programação">
 
 
 
-	<div id="menu">
-		<ui:insert name="menu">
-		<ui:include src="menu.xhtml" />
-		</ui:insert>
-	</div>
+		<div id="menu">
+			<ui:insert name="menu">
+				<ui:include src="menu.xhtml" />
+			</ui:insert>
+		</div>
 
 
 
 
-	<div id="crud">
-	<h:form id="form-crud">
-	<p:growl id="mensagem" />
-		<ui:insert name="crud">
-	<div id="content">
-		<ui:insert name="content">
-		
-		
-		</ui:insert>
-	</div>
+		<div id="crud">
+			<h:form id="form-crud">
+				<p:growl id="mensagem" />
+				<ui:insert name="crud">
+					<div id="content">
+						<ui:insert name="content">
+						</ui:insert>
+					</div>
 
-	
-		</ui:insert>
-	<p:commandButton value="Salvar" />
-	<p:commandButton value="Editar"/>
-	<p:commandButton value="Excluir"/>
-	<p:commandButton value="Cancelar"/>
-	<p:commandButton value="pesquisar"/>
-		</h:form>
-	</div>
-	
-</p:panel>
+
+				</ui:insert>
+				<br />
+				<p:commandButton value="Salvar" />
+				<p:commandButton value="Editar" />
+				<p:commandButton value="Excluir" />
+				<p:commandButton value="Cancelar" />
+				<p:commandButton value="pesquisar" />
+			</h:form>
+		</div>
+
+	</p:panel>
 
 	<div id="footer">
 		<ui:insert name="footer">
-		<ui:include src="footer.xhtml" />
+			<ui:include src="footer.xhtml" />
 		</ui:insert>
 	</div>
 
