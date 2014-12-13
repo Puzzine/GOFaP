@@ -1,7 +1,20 @@
 package br.com.gofap.orm;
 
-public class Solicitacao {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+
+
+@Entity
+public class Solicitacao {
+	
+	
+		
+	
+		@Id
+		@GeneratedValue(strategy=GenerationType.AUTO)
 		private Integer id;
 		private String numero;
 		private String nomeComp;

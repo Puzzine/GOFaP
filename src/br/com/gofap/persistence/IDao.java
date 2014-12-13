@@ -15,9 +15,9 @@ public interface IDao<T> {
 
 	public List<T> list();
 
-	public T getById(Serializable id);
+	public T getById(Integer id);
 
-	public T getById(Serializable id, boolean lock);
+	public T getById(Integer id, boolean lock);
 
 	public List<T> consultaByTipo(int startIndex, Integer sizeBlock,
 			int tipoConsulta, String campo, Object valor);

@@ -1,14 +1,12 @@
 package br.com.gofap.persistence;
 
 
-import java.io.Serializable;
 import java.util.List;
 
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.LockOptions;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
  
 
@@ -19,7 +17,7 @@ public class Repository<T> implements IDao<T> {
     private Session session;
     public Repository(Class<T> entity ) {
         this.entity = entity;
-        session = HibernateUtil.getSessionFactory().getCurrentSession();
+        this.session = HibernateUtil.getSessionFactory().getCurrentSession();
     }
  
     
@@ -53,10 +51,10 @@ public class Repository<T> implements IDao<T> {
     }
 
  
-    @Override
+	@Override
     public List<T> list() {
         try {
-            List list = session.createCriteria(entity).list();
+            List<T> list = session.createCriteria(entity).list();
             return (List<T>) list;
         } catch (HibernateException hibernateException) {
             cancel();
@@ -65,7 +63,7 @@ public class Repository<T> implements IDao<T> {
     }
  
     @Override
-    public T getById(Serializable id) {
+    public T getById(Integer id) {
         try {
             return (T) session.get(entity, id);
         } catch (HibernateException hibernateException) {
@@ -75,7 +73,7 @@ public class Repository<T> implements IDao<T> {
     }
  
     @Override
-    public T getById(Serializable id, boolean lock) {
+    public T getById(Integer id, boolean lock) {
         try {
             if (lock) {
                 return (T)session.get(entity, id, LockOptions.UPGRADE);
