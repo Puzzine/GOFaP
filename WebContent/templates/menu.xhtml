@@ -25,10 +25,10 @@ body {
             <p:menuitem value="Fornecedor"  action="#{router.fornecedor}" />
             <p:menuitem value="Linguagem de Programação"  action="linguagemprogramacao"/>
             <p:menuitem value="Vertical" action="vertical"  />
-            <p:menuitem value="Coordenações" action="coordenacao" />
-            <p:menuitem value="Representantes" url="#" />
+            <p:menuitem value="Coordenações" action="coordenacoes" />
+            <p:menuitem value="Representantes" action="representantes" />
             <p:menuitem value="Custo Hora" url="#" />
-            <p:menuitem value="Tipo Registro" url="#" />
+            <p:menuitem value="Tipo Registro" action="tiporegistro" />
             <p:menuitem value="Justificativa" url="#" />
             <p:menuitem value="Indicação" url="#" />
         </p:submenu>
@@ -46,11 +46,11 @@ body {
             <p:menuitem value="Ranking por período" url="#" />
         </p:submenu>
         <p:submenu label="Administração" >
-            <p:menuitem value="Usuários e Perfis" url="#" />
+            <p:menuitem value="Usuários e Perfis" action="usuariopf" />
         </p:submenu>
         <p:menuitem value="Sair" url="#" icon="ui-icon-close" />
         <f:facet name="options">
-            <p:inputText style="margin-right:10px" placeholder="Search"/>
+            <p:inputText style="margin-right:10px" placeholder="Buscar"/>
             <p:commandButton type="button" value="OK"  />
         </f:facet>
     </p:menubar>

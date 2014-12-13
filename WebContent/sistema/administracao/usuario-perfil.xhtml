@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+
+<ui:composition template="/templates/principal.xhtml">
+	<ui:define name="content">
+		<p:panel header="Cadastro de Usuario" style="width: 70%;">
+			<h:form>
+				<h:panelGrid columns="1">
+					<h:outputLabel value="Matricula:" />
+					<h:inputText value="" size="10" />
+					<h:outputLabel value="Senha" />
+					<p:password value="" feedback="true" id="senha1" validatorMessage="As senhas não conferem" promptLabel="Digite a senha" match="senha2"/>
+					<h:outputLabel value="Confirmar Senha"  />
+					<p:password value="" id="senha2" match="senha2" validatorMessage="As senhas não conferem"/>
+					<h:outputLabel value="Perfil" />
+					<p:selectOneMenu/>
+				</h:panelGrid><br />
+				<p:commandButton value="Salvar" style="width: 150px;" />
+				<p:commandButton value="Cancelar" style="width: 150px;" />
+				<p:commandButton value="Editar" style="width: 150px;" />
+				<p:commandButton value="Excluir" style="width: 150px;" />
+				<p:commandButton value="Pesquisar" style="width: 150px;" />
+			</h:form>
+		</p:panel>
+		
+		<p:panel header="Cadastro de Perfil" style="width: 70%;">
+			<h:form>
+				<h:panelGrid columns="1">
+					<h:outputLabel value="Código" />
+					<h:inputText value="" size="10" />
+					<h:outputLabel value="Nome" />
+					<h:inputText value="" size="45" />
+					<h:outputLabel value="Descricao" />
+					<h:inputText value="" size="45" />
+				</h:panelGrid><br />
+				<p:commandButton value="Salvar" style="width: 150px;" />
+				<p:commandButton value="Cancelar" style="width: 150px;" />
+				<p:commandButton value="Editar" style="width: 150px;" />
+				<p:commandButton value="Excluir" style="width: 150px;" />
+				<p:commandButton value="Pesquisar" style="width: 150px;" />
+			</h:form>
+		</p:panel>
+	</ui:define>
+</ui:composition>
+</html>

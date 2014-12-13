@@ -1,43 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <faces-config version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
- <navigation-rule>
-  <from-view-id>/templates/principal.xhtml</from-view-id>
-  <navigation-case>
-   <from-outcome>fornecedor</from-outcome>
-   <to-view-id>/sistema/parametrizacao/fornecedor.xhtml</to-view-id>
-  </navigation-case>
- </navigation-rule>
- 
- <navigation-rule>
-  <from-view-id>/template/principal.xhtml</from-view-id>
-  <navigation-case>
-   <from-outcome>vertical</from-outcome>
-   <to-view-id>/sistema/parametrizacao/vertical.xhtml</to-view-id>
-  </navigation-case>
- </navigation-rule>
- 
- <navigation-rule>
-  <from-view-id>/template/principal.xhtml</from-view-id>
-  <navigation-case>
-   <from-outcome>linguagemprogramacao</from-outcome>
-   <to-view-id>/sistema/parametrizacao/linguagemprogramacao.xhtml</to-view-id>
-  </navigation-case>
- </navigation-rule>
- 
- 
- 
- 
-  <navigation-rule>
-  <from-view-id>/template/principal.xhtml</from-view-id>
-  <navigation-case>
-   <from-outcome>coordenacao</from-outcome>
-   <to-view-id>/sistema/parametrizacao/coordenacoes.xhtml</to-view-id>
-  </navigation-case>
- </navigation-rule>
- 
- 
- 
- 
- <application/>
- </faces-config>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+
+	<navigation-rule>
+		<from-view-id>/*</from-view-id>
+		<navigation-case>
+			<from-outcome>fornecedor</from-outcome>
+			<to-view-id>/sistema/parametrizacao/fornecedor.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/*</from-view-id>
+		<navigation-case>
+			<from-outcome>vertical</from-outcome>
+			<to-view-id>/sistema/parametrizacao/vertical.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/*</from-view-id>
+		<navigation-case>
+			<from-outcome>linguagemprogramacao</from-outcome>
+			<to-view-id>/sistema/parametrizacao/linguagemprogramacao.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/*</from-view-id>
+		<navigation-case>
+			<from-outcome>coordenacoes</from-outcome>
+			<to-view-id>/sistema/parametrizacao/coordenacoes.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/*</from-view-id>
+		<navigation-case>
+			<from-outcome>tiporegistro</from-outcome>
+			<to-view-id>/sistema/parametrizacao/tiporegistro.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/*</from-view-id>
+		<navigation-case>
+			<from-outcome>representantes</from-outcome>
+			<to-view-id>/sistema/parametrizacao/representantes.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/*</from-view-id>
+		<navigation-case>
+			<from-outcome>usuariopf</from-outcome>
+			<to-view-id>/sistema/administracao/usuario-perfil.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+
+
+	<application />
+</faces-config>
